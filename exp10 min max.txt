@@ -1,0 +1,17 @@
+
+> vector <- c(3, 5, 1, 8, 4, 9, 2, 7, 6)
+
+> # Find the maximum value in the vector
+> max_value <- max(vector)
+
+> # Find the minimum value in the vector
+> min_value <- min(vector)
+
+> # Print the results
+> cat("The maximum value in the vector is:", max_value, "\n")
+The maximum value in the vector is: 9 
+
+> cat("The minimum value in the vector is:", min_value, "\n")
+The minimum value in the vector is: 1 
+
+> sink("file=NULL")
