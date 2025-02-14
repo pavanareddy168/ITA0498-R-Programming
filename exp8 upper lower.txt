@@ -1,0 +1,20 @@
+
+> first_10_lower <- letters[1:10]
+
+> # Extract last 10 uppercase letters
+> last_10_upper <- LETTERS[17:26]
+
+> # Extract letters between 22nd to 24th in uppercase
+> letters_22_to_24_upper <- LETTERS[22:24]
+
+> # Print the results
+> cat("First 10 lowercase letters: ", first_10_lower, "\n")
+First 10 lowercase letters:  a b c d e f g h i j 
+
+> cat("Last 10 uppercase letters: ", last_10_upper, "\n")
+Last 10 uppercase letters:  Q R S T U V W X Y Z 
+
+> cat("Letters between 22nd to 24th in uppercase: ", letters_22_to_24_upper, "\n")
+Letters between 22nd to 24th in uppercase:  V W X 
+
+> sink("file=NULL")
