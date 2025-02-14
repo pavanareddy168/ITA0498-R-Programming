@@ -1,0 +1,16 @@
+
+> sieve_of_eratosthenes <- function(n) {
++   # Create a logical vector and assume all numbers are prime initially
++   is_prime <- rep(TRUE, n)
++   
++  .... [TRUNCATED] 
+
+> # Example usage
+> n <- 50  # Change this value to get primes up to a different number
+
+> primes <- sieve_of_eratosthenes(n)
+
+> print(primes)
+ [1]  2  3  5  7 11 13 17 19 23 29 31 37 41 43 47
+
+> sink("file=NULL")
