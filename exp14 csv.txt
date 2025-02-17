@@ -1,0 +1,17 @@
+
+> # Set the file path (modify as needed)
+> file_path <- "data.csv"  # Replace with your actual CSV file path
+
+> # Read the CSV file
+> data <- read.csv(file_path, header = TRUE, sep = ",")
+
+> # Display the content of the CSV file
+> print(data)
+   Name Age Location
+1  john  26  newyork
+2 alice  30   london
+3   bob  40    paris
+
+> # Alternative: View data in a tabular format (only works in RStudio)
+> # View(data)
+> sink("file=NULL")

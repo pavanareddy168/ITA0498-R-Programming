@@ -1,0 +1,31 @@
+
+> numeric_vector <- c(1, 2, 3)                # Numeric data
+
+> character_vector <- c("apple", "banana", "cherry")  # Character data
+
+> logical_vector <- c(TRUE, FALSE, TRUE)      # Logical data
+
+> # Display the content of the vectors
+> cat("Numeric Vector:\n", numeric_vector, "\n")
+Numeric Vector:
+ 1 2 3 
+
+> cat("Character Vector:\n", character_vector, "\n")
+Character Vector:
+ apple banana cherry 
+
+> cat("Logical Vector:\n", logical_vector, "\n")
+Logical Vector:
+ TRUE FALSE TRUE 
+
+> # Display the type of the vectors
+> cat("Type of Numeric Vector:", typeof(numeric_vector), "\n")
+Type of Numeric Vector: double 
+
+> cat("Type of Character Vector:", typeof(character_vector), "\n")
+Type of Character Vector: character 
+
+> cat("Type of Logical Vector:", typeof(logical_vector), "\n")
+Type of Logical Vector: logical 
+
+> sink("file=NULL")

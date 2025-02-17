@@ -1,0 +1,30 @@
+
+> get_unique_chars <- function(input_string) {
++   # Split the string into individual characters
++   chars <- strsplit(input_string, "")[[1]]
++   
++   .... [TRUNCATED] 
+
+> # Function to get unique numbers from a vector
+> get_unique_numbers <- function(input_vector) {
++   # Get unique numbers
++   unique_numbers <- uniqu .... [TRUNCATED] 
+
+> # Example usage
+> input_string <- "hello world"
+
+> input_vector <- c(1, 2, 2, 3, 4, 4, 5)
+
+> # Get unique characters from the string
+> unique_chars <- get_unique_chars(input_string)
+
+> cat("Unique characters in the string:", unique_chars, "\n")
+Unique characters in the string: h e l o   w r d 
+
+> # Get unique numbers from the vector
+> unique_numbers <- get_unique_numbers(input_vector)
+
+> cat("Unique numbers in the vector:", unique_numbers, "\n")
+Unique numbers in the vector: 1 2 3 4 5 
+
+> sink("file=NULL")
