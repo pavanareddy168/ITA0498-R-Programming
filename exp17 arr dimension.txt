@@ -1,0 +1,32 @@
+
+> values <- c(1:24)  # Values from 1 to 24
+
+> # Define the dimensions of the array
+> dimensions <- c(3, 4, 2)  # 3 rows, 4 columns, 2 layers
+
+> # Provide names for each dimension
+> dimnames_list <- list(
++   c("Row1", "Row2", "Row3"),  # Names for rows
++   c("Col1", "Col2", "Col3", "Col4"),  .... [TRUNCATED] 
+
+> # Create the array
+> my_array <- array(values, dim = dimensions, dimnames = dimnames_list)
+
+> # Display the array
+> print(my_array)
+, , Layer1
+
+     Col1 Col2 Col3 Col4
+Row1    1    4    7   10
+Row2    2    5    8   11
+Row3    3    6    9   12
+
+, , Layer2
+
+     Col1 Col2 Col3 Col4
+Row1   13   16   19   22
+Row2   14   17   20   23
+Row3   15   18   21   24
+
+
+> sink("file=NULL")
