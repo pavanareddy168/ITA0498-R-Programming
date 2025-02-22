@@ -1,0 +1,34 @@
+
+> exam_data <- data.frame(
++   name = c('Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'),
++   scor .... [TRUNCATED] 
+
+> # Create the new data frame with additional rows
+> new_exam_data <- data.frame(
++   name = c('Robert', 'Sophia'),
++   score = c(10.5, 9),
++   attemp .... [TRUNCATED] 
+
+> # Add the new rows to the existing data frame
+> updated_exam_data <- rbind(exam_data, new_exam_data)
+
+> # Print the updated data frame
+> print("Updated data frame with new rows:")
+[1] "Updated data frame with new rows:"
+
+> print(updated_exam_data)
+        name score attempts qualify
+1  Anastasia  12.5        1     yes
+2       Dima   9.0        3      no
+3  Katherine  16.5        2     yes
+4      James  12.0        3      no
+5      Emily   9.0        2      no
+6    Michael  20.0        3     yes
+7    Matthew  14.5        1     yes
+8      Laura  13.5        1      no
+9      Kevin   8.0        2      no
+10     Jonas  19.0        1     yes
+11    Robert  10.5        1     yes
+12    Sophia   9.0        3      no
+
+> sink("file=NULL")

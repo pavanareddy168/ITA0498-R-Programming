@@ -1,0 +1,49 @@
+
+> array1 <- matrix(1:9, nrow = 3, ncol = 3, byrow = TRUE)
+
+> array2 <- matrix(10:18, nrow = 3, ncol = 3, byrow = TRUE)
+
+> array3 <- matrix(19:27, nrow = 3, ncol = 3, byrow = TRUE)
+
+> # Print the original arrays
+> print("Array 1:")
+[1] "Array 1:"
+
+> print(array1)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+
+> print("Array 2:")
+[1] "Array 2:"
+
+> print(array2)
+     [,1] [,2] [,3]
+[1,]   10   11   12
+[2,]   13   14   15
+[3,]   16   17   18
+
+> print("Array 3:")
+[1] "Array 3:"
+
+> print(array3)
+     [,1] [,2] [,3]
+[1,]   19   20   21
+[2,]   22   23   24
+[3,]   25   26   27
+
+> # Combine the first rows of the three arrays
+> combined_first_rows <- rbind(array1[1, ], array2[1, ], array3[1, ])
+
+> # Print the combined result
+> print("Combined first rows of the three arrays:")
+[1] "Combined first rows of the three arrays:"
+
+> print(combined_first_rows)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]   10   11   12
+[3,]   19   20   21
+
+> sink("file=NULL")

@@ -1,0 +1,48 @@
+
+> table1 <- matrix(1:12, nrow = 3, ncol = 4, byrow = TRUE)
+
+> table2 <- matrix(13:24, nrow = 3, ncol = 4, byrow = TRUE)
+
+> # Print the two tables
+> print("Table 1:")
+[1] "Table 1:"
+
+> print(table1)
+     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12
+
+> print("Table 2:")
+[1] "Table 2:"
+
+> print(table2)
+     [,1] [,2] [,3] [,4]
+[1,]   13   14   15   16
+[2,]   17   18   19   20
+[3,]   21   22   23   24
+
+> # Create an array using the two tables
+> array_data <- array(c(table1, table2), dim = c(3, 4, 2))
+
+> # Print the content of the array
+> print("Array content:")
+[1] "Array content:"
+
+> print(array_data)
+, , 1
+
+     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12
+
+, , 2
+
+     [,1] [,2] [,3] [,4]
+[1,]   13   14   15   16
+[2,]   17   18   19   20
+[3,]   21   22   23   24
+
+
+> sink("file=NULL")

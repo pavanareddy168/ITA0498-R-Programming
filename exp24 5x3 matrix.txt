@@ -1,0 +1,19 @@
+
+> even_sequence <- seq(52, by = 2, length.out = 15)  # 15 numbers for a 5x3 array
+
+> # Create a 5x3 matrix from the sequence
+> even_matrix <- matrix(even_sequence, nrow = 5, ncol = 3, byrow = TRUE)
+
+> # Print the matrix
+> print("5x3 Array of even integers greater than 50:")
+[1] "5x3 Array of even integers greater than 50:"
+
+> print(even_matrix)
+     [,1] [,2] [,3]
+[1,]   52   54   56
+[2,]   58   60   62
+[3,]   64   66   68
+[4,]   70   72   74
+[5,]   76   78   80
+
+> sink("file=NULL")
